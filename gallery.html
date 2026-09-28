@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — SOLO Salon</title>
+  <meta name="description" content="Browse SOLO Salon's portfolio of hair transformations, colour work, and beauty results.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">SOLO <span>Salon</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div>
+      <h1>Our Gallery</h1>
+      <p>A showcase of our finest work and transformations</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Our Portfolio</span>
+        <h2>See Our Work</h2>
+        <p>Browse through our collection of hair artistry, beauty transformations, and creative styles.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hair">Hair</button>
+        <button class="filter-btn" data-filter="colour">Colour</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="nails">Nails</button>
+        <button class="filter-btn" data-filter="spa">Spa</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-category="hair">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&h=500&fit=crop" alt="Layered Bob Cut">
+          <div class="gallery-overlay">
+            <h4>Layered Bob</h4>
+            <span>Hair Styling</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="colour">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500&h=500&fit=crop" alt="Balayage Highlights">
+          <div class="gallery-overlay">
+            <h4>Golden Balayage</h4>
+            <span>Colour Services</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bridal">
+          <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=500&h=500&fit=crop" alt="Bridal Updo">
+          <div class="gallery-overlay">
+            <h4>Elegant Bridal Updo</h4>
+            <span>Bridal Styling</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="nails">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&h=500&fit=crop" alt="Gel Nail Art">
+          <div class="gallery-overlay">
+            <h4>Floral Gel Art</h4>
+            <span>Nail Art</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="colour">
+          <img src="https://images.unsplash.com/photo-1554519515-242161756769?w=500&h=500&fit=crop" alt="Vibrant Colour">
+          <div class="gallery-overlay">
+            <h4>Rose Gold Tones</h4>
+            <span>Colour Services</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="spa">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&h=500&fit=crop" alt="Facial Treatment">
+          <div class="gallery-overlay">
+            <h4>Glow Facial</h4>
+            <span>Skin & Spa</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="hair">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=500&h=500&fit=crop" alt="Men's Fade">
+          <div class="gallery-overlay">
+            <h4>Classic Fade</h4>
+            <span>Men's Styling</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bridal">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=500&h=500&fit=crop" alt="Bridal Makeup">
+          <div class="gallery-overlay">
+            <h4>Natural Bridal Glam</h4>
+            <span>Bridal Beauty</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="nails">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=500&h=500&fit=crop" alt="French Manicure">
+          <div class="gallery-overlay">
+            <h4>French Tips</h4>
+            <span>Classic Manicure</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="hair">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeacacf468?w=500&h=500&fit=crop" alt="Long Waves">
+          <div class="gallery-overlay">
+            <h4>Beach Waves</h4>
+            <span>Hair Styling</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="colour">
+          <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=500&h=500&fit=crop" alt="Platinum Blonde">
+          <div class="gallery-overlay">
+            <h4>Platinum Transformation</h4>
+            <span>Colour Correction</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="spa">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=500&h=500&fit=crop" alt="Massage Therapy">
+          <div class="gallery-overlay">
+            <h4>Relaxation Massage</h4>
+            <span>Body Treatments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container reveal">
+      <h2>Love What You See?</h2>
+      <p>Let our artists create your next stunning look.</p>
+      <a href="contact.html" class="btn btn-outline"><i class="fas fa-calendar-check"></i> Book Your Transformation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">SOLO <span>Salon</span></a>
+          <p>Premium hair & beauty services in the heart of the city. Where every visit is an experience.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Hair Styling</a></li>
+            <li><a href="services.html">Colour & Highlights</a></li>
+            <li><a href="services.html">Skin & Spa</a></li>
+            <li><a href="services.html">Nail Art</a></li>
+            <li><a href="services.html">Bridal Package</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for exclusive offers, beauty tips, and salon updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SOLO Salon. All rights reserved.</p>
+        <p>Designed with <a href="#">&hearts;</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

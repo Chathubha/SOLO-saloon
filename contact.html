@@ -105,7 +105,7 @@
           <h3 style="margin-bottom:5px;">Book an Appointment</h3>
           <p style="color:var(--gray); margin-bottom:25px; font-size:0.9rem;">Fill in the form below and we'll confirm your booking within 2 hours.</p>
 
-          <form id="contactForm">
+          <form id="contactForm" action="https://formsubmit.co/bookings@solosalon.lk" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name *</label>
@@ -158,6 +158,11 @@
               <label for="message">Special Requests</label>
               <textarea id="message" name="message" placeholder="Any special requests, allergies, or notes for your stylist..."></textarea>
             </div>
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_subject" value="New Appointment Request — SOLO Salon">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://chathubha.github.io/SOLO-saloon/contact.html#success">
             <button type="submit" class="btn btn-primary form-submit">
               <i class="fas fa-calendar-check"></i> Request Appointment
             </button>

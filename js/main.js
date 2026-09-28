@@ -125,34 +125,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ----- Contact form ----- */
+  /* ----- Contact form (FormSubmit.co) ----- */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+      const name = contactForm.querySelector('#name').value.trim();
+      const email = contactForm.querySelector('#email').value.trim();
+      const phone = contactForm.querySelector('#phone').value.trim();
 
-      const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData);
-
-      // Simple validation
-      if (!data.name || !data.email || !data.phone) {
+      if (!name || !email || !phone) {
+        e.preventDefault();
         showNotification('Please fill in all required fields.', 'error');
         return;
       }
 
-      // Simulate submission
+      // Show sending state — form submits natively to FormSubmit
       const btn = contactForm.querySelector('button[type="submit"]');
-      const originalText = btn.textContent;
-      btn.textContent = 'Sending...';
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
       btn.disabled = true;
-
-      setTimeout(() => {
-        showNotification('Thank you! We\'ll contact you shortly.', 'success');
-        contactForm.reset();
-        btn.textContent = originalText;
-        btn.disabled = false;
-      }, 1500);
     });
+
+    // Show success message if redirected back with #success
+    if (window.location.hash === '#success') {
+      showNotification('Thank you! We\'ll contact you shortly.', 'success');
+      history.replaceState(null, '', window.location.pathname);
+    }
   }
 
   /* ----- Newsletter ----- */
